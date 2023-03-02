@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    background-color: rgb(19, 101, 173);
+}
+
+header ul {
+    display: flex;
+
+
+}
+
+header ul li {
+    padding: 20px;
+    transition: all 2s linear;
+}
+
+header ul li:hover {
+    background-color: black;
+
+
+
+}
+
+header ul li a {
+    font-size: 25px;
+    color: white;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: 33.333%;
+}
+
+.card {
+
+    position: relative;
+    border-radius: 10px;
+    background-color: lightblue;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 5px rgba(30, 255, 0, 0.533), 15px 15px 10px 10px rgb(16, 4, 66);
+    transition: all 2s linear;
+
+}
+
+.card p {
+    text-indent: 15px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.card h1 {
+    position: relative;
+    transition: all 2s linear;
+
+}
+
+.card h1::after {
+
+    content: "";
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    width: 0px;
+}
+
+.card h1:hover::after {
+    /* border: 1px solid rgb(95, 205, 91); */
+    width: 50px;
+    height: 10px;
+    background-color: rebeccapurple;
+    transition: all 2s linear;
+
+}
+
+.card img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    height: auto;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #212529;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content h2,
+ul {
+    color: white;
+}
+
+.footer-content ul li {
+    font-size: 24px;
+    margin: 10px;
+    text-transform: uppercase;
+}
